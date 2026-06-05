@@ -7,7 +7,6 @@ import joblib
 # -----------------------------
 st.set_page_config(
     page_title="Swiggy Delivery Predictor",
-    page_icon="🚚",
     layout="wide"
 )
 
@@ -64,7 +63,7 @@ model = joblib.load("linear_regression_model.pkl")
 # HEADER
 # -----------------------------
 st.markdown(
-    "<div class='main-title'>🚚 Swiggy Delivery Time Prediction</div>",
+    "<div class='main-title'> Swiggy Delivery Time Prediction</div>",
     unsafe_allow_html=True
 )
 
@@ -77,7 +76,7 @@ st.markdown(
 # RIDER DETAILS
 # ==========================================================
 
-with st.expander("🚴 Rider Details", expanded=True):
+with st.expander(" Rider Details", expanded=True):
 
     col1, col2 = st.columns(2)
 
@@ -116,7 +115,7 @@ with st.expander("🚴 Rider Details", expanded=True):
 # ORDER DETAILS
 # ==========================================================
 
-with st.expander("🍔 Order Details", expanded=True):
+with st.expander(" Order Details", expanded=True):
 
     col1, col2 = st.columns(2)
 
@@ -195,7 +194,7 @@ with st.expander("🍔 Order Details", expanded=True):
 # ENVIRONMENT DETAILS
 # ==========================================================
 
-with st.expander("🌦️ Environment Details", expanded=True):
+with st.expander(" Environment Details", expanded=True):
 
     col1, col2 = st.columns(2)
 
@@ -268,7 +267,7 @@ with st.expander("🌦️ Environment Details", expanded=True):
 # LOCATION DETAILS
 # ==========================================================
 
-with st.expander("📍 Location Details", expanded=False):
+with st.expander(" Location Details", expanded=False):
 
     col1, col2 = st.columns(2)
 
@@ -300,7 +299,7 @@ with st.expander("📍 Location Details", expanded=False):
 # PREDICTION BUTTON
 # ==========================================================
 
-if st.button("🚀 Predict Delivery Time"):
+if st.button(" Predict Delivery Time"):
 
     input_data = pd.DataFrame({
 
